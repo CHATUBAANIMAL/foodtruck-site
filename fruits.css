@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #e91e63;
+    --light-primary: #6a1b9a;
+    --ligthest-color: #eed9d9;
+
+} 
+
+
+.fruit-options {
+    display: block;
+    align-items: middle;
+    padding-top: 5px;
+
+    
+}
+
+
+
+.fruit-option input[type="checkbox"] {
+    display: none;
+}
+
+.fruit-option label {
+    cursor: pointer;
+}
+
+
+.fruit-option input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.fruit-option input[type="checkbox"]:checked + label:before {
+    background-color: #007bff;
+}
+
+
+.fruit-option input[type="checkbox"]:checked + label {
+    color: #007bff;
+}
+
+.fruit-option label span {
+    vertical-align: center;
+}
+
+.chocolate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chocolate-container label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chocolate-container select {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
