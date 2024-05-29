@@ -1,17 +1,21 @@
 :root {
-    --primary-color: #e91e63;
-    --light-primary: #6a1b9a;
-    --ligthest-color: #eed9d9;
+    --primary-color: #B76D40;
+    --light-primary: #451312;
+    --ligthest-color: #240D0B;
 
 } 
 
+.logo{
+    width: 25%;
+    display: flex;
+    align-self: center;
+    margin-bottom: -8%;
+}
 
 .fruit-options {
     display: block;
     align-items: middle;
-    padding-top: 5px;
-
-    
+    padding-top: 5px; 
 }
 
 
