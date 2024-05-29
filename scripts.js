@@ -97,7 +97,7 @@ function addCupWithFruits() {
         frutas: selectedFruits,
         chocolate: chocolateType
     };
-    addToCart('Copo de Chocolate com Frutas', 30.00, itemOptions);
+    addToCart('Copo de Chocolate com Frutas', 20.00, itemOptions);
     document.getElementById('fruit-options').classList.add('hidden');
     checkbox.value = '';
 }
