@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="fruits.css">
     <script defer src="scripts.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="/logo.png">
 </head>
 <body>
     <header>
@@ -16,7 +16,6 @@
             <button id="nav-toggle" aria-label="Abrir Menu">&#9776;</button>
             <nav id="nav-menu">
                 <a href="index.html">
-                    <img src="logo.png" alt="Logo Hotnesshot" class="logo">
                 </a>
                 <ul id="nav-list">
                     <li><a href="index.html#menu">Menu</a></li>
@@ -26,16 +25,20 @@
                 </ul>
             </nav>
     </header>
+
+    <img src="logo.png" alt="Logo Hotnesshot" class="logo">
     
     <main>
         <section id="home" class="banner">
             <div class="banner-text">
-                <h1>FESTIVAL DE FOOD TRUCKS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus pharetra nulla ac diam. Quisque semper justo at risus.</p>
-                <a href="#menu" class="btn-learn-more">Saiba Mais</a>
+                <h1>FONDUE NA VIAGEM</h1>
+                <p>Um foodtruck que convida você a provar nosso menu
+                    Feito para você e quem mais você amar
+                </p>
+                <a href="#menu" class="btn-learn-more">CONHEÇA</a>
             </div>
             <div class="banner-image">
-                <img src="foodtruck.jpeg" alt="Food Truck Hotnesshot">
+                <img src="foodtruck.png" alt="Food Truck Hotnesshot">
             </div>
         </section>
         <section id="info" class="info-section">
@@ -49,28 +52,41 @@
         <section id="menu" class="menu-section">
             <h2>Nosso Menu</h2>
             <div class="menu-item">
-                <h3>Combo Festa</h3>
-                <img src="fondue_queijo.jpg" alt="Fondue de Queijo">
-                <p>Delicioso fondue de queijo com acompanhamentos.</p>
-                <button onclick="addToCart('Fondue de Queijo', 50.00)">Adicionar ao Carrinho - R$50,00</button>
+                <h3>Casquinha de fruta</h3>
+                <img src="casquinha-de-frutas.png" alt="Fondue de Queijo">
+                <p>Casquinha recheada com frutas e chocolate.</p>
+                <button onclick="addToCart('casquinha de frutas', 17.00)">Adicionar ao Carrinho - R$17,00</button>
             </div>
             <div class="menu-item">
-                <h3>Fondue de Queijo</h3>
-                <img src="fondue_queijo.jpg" alt="Fondue de Queijo">
-                <p>Delicioso fondue de queijo com acompanhamentos.</p>
-                <button onclick="addToCart('Fondue de Queijo', 50.00)">Adicionar ao Carrinho - R$50,00</button>
+                <h3>Chocolate Quente</h3>
+                <img src="chocolate-quente.png" alt="chocolate quente">
+                <p>Caneca de chocolate quente com caramelo e creme de leite 400ml.</p>
+                <button onclick="addToCart('Chocolate Quente', 8.00)">Adicionar ao Carrinho - R$8,00</button>
             </div>
             <div class="menu-item">
-                <h3>Fondue de Chocolate</h3>
-                <img src="fondue_chocolate.jpg" alt="Fondue de Chocolate">
-                <p>Irresistível fondue de chocolate com frutas.</p>
-                <button onclick="addToCart('Fondue de Chocolate', 40.00)">Adicionar ao Carrinho - R$40,00</button>
+                <h3>Combo de dois</h3>
+                <img src="combo-de-dois.png" alt="combo de dois">
+                <p>Fundue com duas frutas e dois doces a sua escolha</p>
+                <button onclick="addToCart('Combo de dois', 25.00)">Adicionar ao Carrinho - R$25,00</button>
+            </div>
+            <div class="menu-item">
+                <h3>Combo de três</h3>
+                <img src="combo-de-tres.png" alt="combo de três">
+                <p>Fundue com três frutas e três doces a sua escolha</p>
+                <button onclick="addToCart('Combo de três', 35.00)">Adicionar ao Carrinho - R$35,00</button>
+            </div>
+            <div class="menu-item">
+                <h3>Combo de quatro</h3>
+                <img src="combo-de-quatro.png" alt="combo de quatro">
+                <p>Fundue com quatro frutas e quatro doces a sua escolha</p>
+                <button onclick="addToCart('combo de quatro', 50)">Adicionar ao Carrinho - R$50,00</button>
             </div>
             <div class="menu-item">
                 <h3>Copo de Chocolate com Frutas</h3>
-                <img src="copo_chocolate_frutas.jpg" alt="Copo de Chocolate com Frutas">
+                <img src="copo-de-frutas.png" alt="Copo de Chocolate com Frutas">
                 <p>Escolha suas frutas e tipo de chocolate.</p>
-                <button onclick="showFruitOptions()">Adicionar ao Carrinho - R$30,00</button>
+                <button onclick="showFruitOptions()">Escolher frutas</button>
+            
                 <div id="fruit-options" class="hidden">
                     <label for="fruits">Frutas:</label>
                     <div class="fruit-options">
@@ -129,6 +145,7 @@
                             <option value="Branco">Branco</option>
                         </select>
                         <button onclick="addCupWithFruits()">Adicionar ao Carrinho</button>
+            </div>            
             </div>
         </section>
         <section id="contact" class="contact-section">
